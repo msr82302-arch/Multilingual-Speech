@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero">
+
+    <!-- Animated Logo -->
+    {% load static %}
+
+    <a href="{% url 'dashboard' %}" class="logo-wrapper">
+        <div class="orbit-container">
+
+            <img src="{% static 'images/logo.png' %}" class="earth">
+
+            <div class="orbit-ring"></div>
+
+            <div class="orbit-text">
+                MULTI • LINGUAL • SPEECH
+            </div>
+
+        </div>
+    </a>
+</div>
+
+
+<div class="card">
+
+    <h1>AI Powered Multilingual Speech Platform</h1>
+
+    <p style="color:#9ca3af;">
+        Translate speech and text instantly across multiple languages
+        using advanced AI processing.
+    </p>
+
+    <br>
+
+    <h3>Platform Capabilities</h3>
+
+    <ul>
+        <li>Speech → Text</li>
+        <li>Text → Translation</li>
+        <li>Text → Speech</li>
+        <li>Audio → Audio</li>
+    </ul>
+
+    <br><br>
+
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'dashboard' %}">
+            <button>Go To Dashboard</button>
+        </a>
+    {% else %}
+        <a href="{% url 'login' %}">
+            <button>Login To Start</button>
+        </a>
+    {% endif %}
+
+</div>
+
+{% endblock %}

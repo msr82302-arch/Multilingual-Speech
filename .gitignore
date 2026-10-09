@@ -1,0 +1,87 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+multienv/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Django
+
+db.sqlite3
+*.log
+staticfiles/
+
+# Test and coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating system
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large model and audio files
+
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.mp3
+*.webm
+*.flac
+
+
+
+OPENAI_API_KEY=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
+
+DJANGO_SECRET_KEY=your-django-secret-key
+
+DEBUG=True
+
+#MONGO_URI="mongodb+srv://Multi-lingualSpeech:<TTS@786tts@786>@0cluster.r4n5jtk.mongodb.net/Speech_data?appName=0Cluster"
+
+# Store the raw values without manual encoding or quotes
+MONGO_USER=Multi-lingualSpeech
+MONGO_PASSWORD=TTS@786tts@786
+MONGO_CLUSTER=cluster.r4n5jtk.mongodb.net
+MONGO_DB=Speech_data
+DJANGO_SECRET_KEY=mDeY7zcpdJ88YMd9txSPKByQKzzojCNpZIYu69awzPhPcBVAT2TLovdClcoosJE1862hs7NvUlgA6jlxS8tn_A
+
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.gitenv
+.gitenv.*
+google-credentials.json
+*credentials*.json
+
+# Python virtual environments and cache
+multienv/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local databases, uploads and logs
+*.sqlite3
+media/
+logs/
+*.log
