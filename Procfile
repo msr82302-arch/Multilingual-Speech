@@ -1,1 +1,1 @@
-web: gunicorn Multi-Lingual-Speech.wsgi:application
+web: gunicorn backend.wsgi:application
