@@ -8,7 +8,24 @@ load_dotenv(BASE_DIR / ".env")'''
 from pathlib import Path
 from urllib.parse import quote_plus
 from dotenv import load_dotenv
+
 import os
+
+
+import os
+from pathlib import Path
+
+# 1. Turn off debug mode so errors aren't public
+DEBUG = False
+
+# 2. Allow your upcoming Railway domains to access the site
+ALLOWED_HOSTS = ['.railway.app', 'localhost', '127.0.0.1']
+
+# 3. Add static file compilation destinations for the cloud engine
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
